@@ -1,0 +1,29 @@
+.arrange {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBody {
+  background: #2f303a;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapperMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.sideImg {
+  width: 400px;
+  height: 400px;
+  margin-left: 10%;
+}

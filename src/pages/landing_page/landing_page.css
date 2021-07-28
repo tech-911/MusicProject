@@ -1,0 +1,47 @@
+.container {
+  background-image: url("../../assets/landing page.png");
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapperBody {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.img {
+  height: 550px;
+  width: 416px;
+  margin-top: 117px;
+  margin-left: 110px;
+}
+.textwrap {
+  margin-right: 240px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 55px;
+}
+.btn{
+  background:  #1762A7;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  margin-top: 13%;
+  color: #fff;
+}
+
+.btn:hover{
+  background:rgba(188, 58, 128, 0.12);
+  cursor: pointer;
+}

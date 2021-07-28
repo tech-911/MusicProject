@@ -1,0 +1,51 @@
+.containerfoot {
+  background: radial-gradient(
+    50.44% 9465.43% at 19.53% 0%,
+    #66666b 0%,
+    #09090c 100%
+  );
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 3;
+  position: absolute;
+  left: 0px;
+  top: 868px;
+}
+.wrapperfoot {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+._fst {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 160px;
+}
+._scnd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 160px;
+}
+a {
+  text-decoration: none;
+}
+
+._fst > a {
+  margin-right: 20px;
+  color: #fff;
+}
+._scnd > a {
+  margin-right: 20px;
+  color: #fff;
+  margin-left: 10px;
+}
