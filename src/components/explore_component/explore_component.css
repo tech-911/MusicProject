@@ -1,3 +1,14 @@
 .explore {
   color: #fff;
+  margin-bottom: 100px;
 }
+.wid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 32%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
