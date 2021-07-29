@@ -1,0 +1,19 @@
+.inputBody {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100px;
+}
+
+.inputBody > input {
+  border: 1px solid #1762a7;
+  border-radius: 10px;
+  background: #202027;
+  color: white;
+  width: 100;
+  height: 100%;
+  outline: none;
+  padding: 9px;
+}
+
