@@ -1,0 +1,8 @@
+.formBody {
+  background: #202027;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 35em;
+  width: 25em;
+}

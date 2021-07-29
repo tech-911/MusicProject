@@ -15,13 +15,13 @@ function explore_component(props) {
       <h1>{props.title}</h1>
       <widgetContainer className="wid">
         <Widget icon="" text="Charts">
-          <FaMicrophone />
+          <FaMicrophone size="1.5em" />
         </Widget>
         <Widget icon="" text="Albums">
-          <FaBook />
+          <FaBook size="1.5em" />
         </Widget>
         <Widget icon="" text="More">
-          <FaMicrochip />
+          <FaMicrochip size="1.5em" />
         </Widget>
       </widgetContainer>
 

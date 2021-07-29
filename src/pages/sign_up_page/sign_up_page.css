@@ -1,0 +1,31 @@
+.join {
+  background: #2f303a;
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapJoin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+  width: 100%;
+}
+
+.wrapJoin > img {
+  /* height: 15%; */
+  width: 30%;
+  margin-left: 160px;
+  margin-top: -20%;
+}
+.form {
+  margin-right: 90px;
+  
+}
