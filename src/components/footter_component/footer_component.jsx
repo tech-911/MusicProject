@@ -17,11 +17,11 @@ function footer_component() {
 
         <secondfoot className="_scnd">
           <FaTwitter color="white" size="0.8em" />
-          <a id="ht" href="">
+          <a id="ht" href="../../pages/404/error_pages">
             Twitter
           </a>
           <FaFacebookSquare color="white" size="0.8em" />
-          <a href="">Face book</a>
+          <a href="https://web.facebook.com/">Face book</a>
         </secondfoot>
       </wrapper>
     </container>

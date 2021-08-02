@@ -9,8 +9,8 @@ function landing_page() {
 
         <textWrapper className="textwrap">
           <h1>Feel the music</h1>
-          <p>Stream over twenty thousand songs with one click</p>
-          <button className="btn">Join Now</button>
+          <p className="pforlanding">Stream over twenty thousand songs with one click</p>
+          <button className="btnforlanding">Join Now</button>
         </textWrapper>
       </wrapper>
     </container>

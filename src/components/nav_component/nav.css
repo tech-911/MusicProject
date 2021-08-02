@@ -30,6 +30,9 @@
   justify-content: space-between;
   margin-right: 160px;
 }
+.fst:hover {
+  cursor: pointer;
+}
 
 secondnav > a,
 p {
