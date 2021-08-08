@@ -10,7 +10,7 @@ function main_page_body() {
           title="Discover new music"
           base="BY JOINING YOU CAN BENEFIT BY LISTENING TO THE LATEST ALBUM RELESED"
         />
-        <img src={Album} className="sideImg" />
+        <img src={Album} alt="" className="sideImg" />
       </wrapperMain>
     </container>
   );

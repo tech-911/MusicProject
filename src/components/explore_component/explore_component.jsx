@@ -1,13 +1,7 @@
 import React from "react";
 import "./explore_component.css";
 import Widget from "../widget/widget";
-import {
-  FaTwitter,
-  FaFacebookSquare,
-  FaMicrophone,
-  FaBook,
-  FaMicrochip,
-} from "react-icons/fa";
+import { FaMicrophone, FaBook, FaMicrochip } from "react-icons/fa";
 
 function explore_component(props) {
   return (
