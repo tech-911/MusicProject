@@ -3,8 +3,8 @@ import "./input.css";
 function input(props) {
   return (
     <inputCompo className="inputBody">
-      <label for="fname">{props.title}</label> <br></br>
-      <input type={props.type} id="fname" name="fname" />
+      <label for={props.id}>{props.label}</label> <br></br>
+      <input type={props.type} id={props.id} onChange={props.handleChange} name={props.name} required/>
     </inputCompo>
   );
 }

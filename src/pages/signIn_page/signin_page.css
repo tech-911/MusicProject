@@ -1,0 +1,30 @@
+.signinleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -125px;
+  margin-right: -120px;
+  margin-left: 165px;
+}
+.signinwithgoogle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+.signinwithgoogle > * {
+  padding-right: 10px;
+}
+.signinwithgoogle > *:hover {
+  cursor: pointer;
+}
+
+.signinwithgoogle > #icon{
+  transform: translate(0px, 0px);
+  transition: transform 1s;
+}
+
+.signinwithgoogle > #icon:hover {
+  transform: translate(0px, -10px);
+}
