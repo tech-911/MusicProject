@@ -12,11 +12,12 @@ function form(props) {
             name={props.id[id]}
             id={props.id[id]}
             type={props.type[id]}
+            value={props.value[id]}
           />
         );
       })}
 
-      <div className="btn">Join Now</div>
+      <button type="submit" className="btn">Join Now</button>
     </form>
   );
 }

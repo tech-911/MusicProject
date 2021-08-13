@@ -2,8 +2,9 @@ import React from "react";
 import "./nav.css";
 import logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
+import { auth } from "../../firebase/firebase.utils";
 
-function nav({ match, history }) {
+function nav(props) {
   return (
     <container className="nav">
       <wrapper className="wrapper">
@@ -24,6 +25,17 @@ function nav({ match, history }) {
         <secondnav className="scnd">
           <Link to="/main">Discover</Link>
           <Link to="/signup">Join</Link>
+          {props.currentUser ? (
+            <span
+              onClick={() => {
+                auth.signOut();
+              }}
+            >
+              SignOut
+            </span>
+          ) : (
+            <Link to="/signin">SignIn</Link>
+          )}
         </secondnav>
       </wrapper>
     </container>

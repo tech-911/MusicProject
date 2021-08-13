@@ -1,5 +1,6 @@
 import React from "react";
 import "./landing_page.css";
+import { Link } from "react-router-dom";
 import Avatar from "../../assets/landing-page-girl 1.png";
 function landing_page() {
   return (
@@ -9,8 +10,12 @@ function landing_page() {
 
         <textWrapper className="textwrap">
           <h1>Feel the music</h1>
-          <p className="pforlanding">Stream over twenty thousand songs with one click</p>
-          <button className="btnforlanding">Join Now</button>
+          <p className="pforlanding">
+            Stream over twenty thousand songs with one click
+          </p>
+          <Link to="/signup" className="btnforlanding">
+            Join Now
+          </Link>
         </textWrapper>
       </wrapper>
     </container>
