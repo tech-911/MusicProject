@@ -3,22 +3,32 @@ import "./signin_page.css";
 import Sign from "../../assets/SignIn to fun..png";
 import Form from "../../components/form_component/form";
 import { FcGoogle } from "react-icons/fc";
-import { signInWithGoogle} from "../../firebase/firebase.utils";
+import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
 class signin extends React.Component {
   constructor() {
     super();
     this.state = {
+      email: "",
+      password: "",
       label: ["Email: ", "Passwords: "],
       type: ["email", "password"],
       id: ["email", "password"],
-      email: "",
-      password: "",
     };
   }
 
-  handleSubmit = (event) => {
+  ffa = () => {
+    return [this.state.email, this.state.password];
+  };
+
+  handleSubmit = async (event) => {
     event.preventDefault();
-    this.setState({ email: "", password: "" });
+    const { email, password } = this.state;
+    try {
+      await auth.signInWithEmailAndPassword(email, password);
+      this.setState({ email: "", password: "" });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   handleChange = (event) => {
@@ -46,6 +56,7 @@ class signin extends React.Component {
               type={type}
               id={id}
               handleSubmit={this.handleSubmit}
+              value={this.ffa()}
             />
           </formCompo>
         </wrapperJoin>
