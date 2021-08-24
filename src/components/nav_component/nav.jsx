@@ -3,8 +3,9 @@ import "./nav.css";
 import logo from "../../assets/Logo.png";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/firebase.utils";
+import { connect } from "react-redux";
 
-function nav(props) {
+function nav({currentUser}) {
   return (
     <container className="nav">
       <wrapper className="wrapper">
@@ -25,7 +26,7 @@ function nav(props) {
         <secondnav className="scnd">
           <Link to="/main">Discover</Link>
           <Link to="/signup">Join</Link>
-          {props.currentUser ? (
+          {currentUser ? (
             <span
               onClick={() => {
                 auth.signOut();
@@ -41,5 +42,7 @@ function nav(props) {
     </container>
   );
 }
-
-export default nav;
+const mapStateToProps = (state) => ({
+  currentUser: state.user.currentUser,
+});
+export default connect(mapStateToProps)(nav);
