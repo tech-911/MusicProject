@@ -36,11 +36,41 @@ class App extends React.Component {
       <div>
         <Nav />
         <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/home" component={Landing} />
-          <Route exact path="/signup" component={SignUp} />
-          <Route exact path="/signin" component={SignIn} />
-          <Route exact path="/main" component={Main} />
+          <Route
+            exact
+            path="/"
+            render={() =>
+              this.props.currentUser ? <Redirect to="/main" /> : <Landing />
+            }
+          />
+          <Route
+            exact
+            path="/home"
+            render={() =>
+              this.props.currentUser ? <Redirect to="/main" /> : <Landing />
+            }
+          />
+          <Route
+            exact
+            path="/signup"
+            render={() =>
+              this.props.currentUser ? <Redirect to="/main" /> : <SignUp />
+            }
+          />
+          <Route
+            exact
+            path="/signin"
+            render={() =>
+              this.props.currentUser ? <Redirect to="/main" /> : <SignIn />
+            }
+          />
+          <Route
+            exact
+            path="/main"
+            render={() =>
+              !this.props.currentUser ? <Redirect to="/home" /> : <Main />
+            }
+          />
           <Route exact path="/error" component={Error} />
           <Redirect to="/error" />
         </Switch>
@@ -48,8 +78,12 @@ class App extends React.Component {
     );
   }
 }
+const mapStateToProps = ({ user }) => ({
+  currentUser: user.currentUser,
+});
+
 const mapDispatchToProps = (dispatch) => ({
   setCurrentUser: (user) => dispatch(setCurrentUser(user)),
 });
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
